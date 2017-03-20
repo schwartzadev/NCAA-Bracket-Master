@@ -39,30 +39,26 @@ public class Main {
         Team mia = new Team(); mia.make("MiamiFL", 8); list.add(mia);
         Team msu = new Team(); msu.make("MichiganSt", 9); list.add(msu);
 
-        // FIX BELOW
+        Team isu = new Team(); isu.make("IowaState", 5); list.add(isu);
+        Team nev = new Team(); nev.make("Nevada", 12); list.add(nev);
 
-        /*Team name = new Team(); nova.make("IowaState", 20);
-        Team name = new Team(); nova.make("Nevada", 20);
+        Team pur = new Team(); pur.make("Purdue", 4); list.add(pur);
+        Team uvm = new Team(); uvm.make("Vermont", 13); list.add(uvm);
 
-        Team name = new Team(); nova.make("Purdue", 20);
-        Team name = new Team(); nova.make("Vermont", 20);
+        Team crei = new Team(); crei.make("Creighton", 6); list.add(crei);
+        Team uri = new Team(); uri.make("RhodeIsland", 11); list.add(uri);
 
+        Team ore = new Team(); ore.make("Oregon", 3); list.add(ore);
+        Team iona = new Team(); iona.make("Iona", 14); list.add(iona);
 
-        Team name = new Team(); nova.make("Creighton", 20);
-        Team name = new Team(); nova.make("RhodeIsland", 20);
+        Team mich = new Team(); mich.make("Michigan", 7); list.add(mich);
+        Team okst = new Team(); okst.make("Oklahoma State", 10); list.add(okst);
 
-        Team name = new Team(); nova.make("Oregon", 20);
-        Team iona = new Team(); nova.make("Iona", 20);
-
-
-        Team name = new Team(); nova.make("Michigan", 20);
-        Team name = new Team(); nova.make("OklaState", 20);
-
-        Team name = new Team(); nova.make("Louisville", 20);
-        Team name = new Team(); nova.make("JaxState", 20);
+        Team lou = new Team(); lou.make("Louisville", 2); list.add(lou);
+        Team jvst = new Team(); jvst.make("Jacksonville State", 15); list.add(jvst);
 
 
-        Team name = new Team(); nova.make("Gonzaga", 20);
+        /*Team name = new Team(); nova.make("Gonzaga", 20);
         Team name = new Team(); nova.make("SDakotaSt", 20);
 
         Team name = new Team(); nova.make("NWestern", 20);
