@@ -58,34 +58,34 @@ public class Main {
         Team jvst = new Team(); jvst.make("Jacksonville State", 15); list.add(jvst);
 
 
-        /*Team name = new Team(); nova.make("Gonzaga", 20);
-        Team name = new Team(); nova.make("SDakotaSt", 20);
+        Team gonz = new Team(); gonz.make("Gonzaga", 1); list.add(gonz);
+        Team sdst = new Team(); sdst.make("SDakotaSt", 16); list.add(sdst);
 
-        Team name = new Team(); nova.make("NWestern", 20);
-        Team name = new Team(); nova.make("Vanderbilt", 20);
-
-
-        Team nd = new Team(); nova.make("NotreDame", 20);
-        Team name = new Team(); nova.make("Princeton", 20);
-
-        Team wva = new Team(); nova.make("WVirginia", 20);
-        Team name = new Team(); nova.make("Bucknell", 20);
+        Team nw = new Team(); nw.make("Northwestern", 8); list.add(nw);
+        Team van = new Team(); van.make("Vanderbilt", 9); list.add(van);
 
 
-        Team name = new Team(); nova.make("Maryland", 20);
-        Team name = new Team(); nova.make("Xavier", 20);
+        Team nd = new Team(); nd.make("NotreDame", 5); list.add(nd);
+        Team prin = new Team(); prin.make("Princeton", 12); list.add(prin);
 
-        Team name = new Team(); nova.make("FloridaState", 20);
-        Team fgcu = new Team(); nova.make("FGCU", 20);
-
-
-        Team name = new Team(); nova.make("StMarys", 20);
-        Team vcu = new Team(); nova.make("VCU", 20);
-
-        Team name = new Team(); nova.make("Arizona", 20);
-        Team name = new Team(); nova.make("NDakota", 20);
+        Team wvu = new Team(); wvu.make("WVirginia", 4); list.add(wvu);
+        Team buck = new Team(); buck.make("Bucknell", 13); list.add(buck);
 
 
+        Team md = new Team(); md.make("Maryland", 6); list.add(md);
+        Team xav = new Team(); xav.make("Xavier", 11); list.add(xav);
+
+        Team fsu = new Team(); fsu.make("Florida State", 3); list.add(fsu);
+        Team fgcu = new Team(); fgcu.make("FGCU", 14); list.add(fgcu);
+
+
+        Team smc = new Team(); smc.make("Saint Mary's", 7); list.add(smc);
+        Team vcu = new Team(); vcu.make("VCU", 10); list.add(vcu);
+
+        Team ariz = new Team(); ariz.make("Arizona", 2); list.add(ariz);
+        Team und = new Team(); und.make("NDakota", 15); list.add(und);
+
+/*
         Team unc = new Team(); nova.make("UNC", 20);
         Team txso = new Team(); nova.make("TXSO", 20);
 
