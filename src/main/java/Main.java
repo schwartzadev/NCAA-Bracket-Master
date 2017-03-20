@@ -57,13 +57,12 @@ public class Main {
         Team lou = new Team(); lou.make("Louisville", 2); list.add(lou);
         Team jvst = new Team(); jvst.make("Jacksonville State", 15); list.add(jvst);
 
-
+        /* *** WEST *** */
         Team gonz = new Team(); gonz.make("Gonzaga", 1); list.add(gonz);
         Team sdst = new Team(); sdst.make("SDakotaSt", 16); list.add(sdst);
 
         Team nw = new Team(); nw.make("Northwestern", 8); list.add(nw);
         Team van = new Team(); van.make("Vanderbilt", 9); list.add(van);
-
 
         Team nd = new Team(); nd.make("NotreDame", 5); list.add(nd);
         Team prin = new Team(); prin.make("Princeton", 12); list.add(prin);
@@ -71,13 +70,11 @@ public class Main {
         Team wvu = new Team(); wvu.make("WVirginia", 4); list.add(wvu);
         Team buck = new Team(); buck.make("Bucknell", 13); list.add(buck);
 
-
         Team md = new Team(); md.make("Maryland", 6); list.add(md);
         Team xav = new Team(); xav.make("Xavier", 11); list.add(xav);
 
         Team fsu = new Team(); fsu.make("Florida State", 3); list.add(fsu);
         Team fgcu = new Team(); fgcu.make("FGCU", 14); list.add(fgcu);
-
 
         Team smc = new Team(); smc.make("Saint Mary's", 7); list.add(smc);
         Team vcu = new Team(); vcu.make("VCU", 10); list.add(vcu);
@@ -85,43 +82,39 @@ public class Main {
         Team ariz = new Team(); ariz.make("Arizona", 2); list.add(ariz);
         Team und = new Team(); und.make("NDakota", 15); list.add(und);
 
-/*
-        Team unc = new Team(); nova.make("UNC", 20);
-        Team txso = new Team(); nova.make("TXSO", 20);
+        /* *** SOUTH *** */
+        Team unc = new Team(); unc.make("UNC", 1); list.add(unc);
+        Team txso = new Team(); txso.make("Texas Southern", 16); list.add(txso);
 
-        Team name = new Team(); nova.make("Arkansas", 20);
-        Team name = new Team(); nova.make("SetonHall", 20);
+        Team ark = new Team(); ark.make("Arkansas", 8); list.add(ark);
+        Team hall = new Team(); hall.make("SetonHall", 9); list.add(hall);
 
+        Team minn = new Team(); minn.make("Minnesota", 5); list.add(minn);
+        Team mtsu = new Team(); mtsu.make("Middle Tennessee", 12); list.add(mtsu);
 
-        Team name = new Team(); nova.make("Minnesota", 20);
-        Team name = new Team(); nova.make("MidTenn", 20);
+        Team but = new Team(); but.make("Butler", 4); list.add(but);
+        Team win = new Team(); win.make("Winthrop", 13); list.add(win);
 
-        Team name = new Team(); nova.make("Butler", 20);
-        Team name = new Team(); nova.make("Winthrop", 20);
+        Team cin = new Team(); cin.make("Cincinnati", 6); list.add(cin);
+        Team ksu = new Team(); ksu.make("KSU", 11); list.add(ksu);
 
+        Team ucla = new Team(); ucla.make("UCLA", 3); list.add(ucla);
+        Team kent = new Team(); kent.make("KentSt", 14); list.add(kent);
 
-        Team name = new Team(); nova.make("Cincinnati", 20);
-        Team ksu = new Team(); nova.make("KSU", 20);
+        Team day = new Team(); day.make("Dayton", 7); list.add(day);
+        Team wich = new Team(); wich.make("WichitaSt", 10); list.add(wich);
 
-        Team ucla = new Team(); nova.make("UCLA", 20);
-        Team name = new Team(); nova.make("KentSt", 20);
-
-
-        Team name = new Team(); nova.make("Dayton", 20);
-        Team name = new Team(); nova.make("WichitaSt", 20);
-
-        Team name = new Team(); nova.make("Kentucky", 20);
-        Team name = new Team(); nova.make("NKentucky", 20);
+        Team uk = new Team(); uk.make("Kentucky", 2); list.add(uk);
+        Team nku = new Team(); nku.make("NKentucky", 15); list.add(nku);
 
 
-
-        list = playRound(list); // returns round of 32*/
+        printAL(list);
+        list = playRound(list); // returns round of 32
         list = playRound(list); // returns sweet 16
         list = playRound(list); // returns 8
         list = playRound(list); // returns final four
         list = playRound(list); // returns championship game
         list = playRound(list); // returns champion
-        printAL(list);
     }
     public static ArrayList<Team> playRound(ArrayList<Team> ar) {
         ArrayList<Team> nextRound = new ArrayList();
@@ -131,13 +124,13 @@ public class Main {
             nextRound.add(list.get(i + winner));
         }
         printAL(nextRound);
-        System.out.println(nextRound.size());
         return nextRound;
     }
     public static void printAL(ArrayList<Team> ar) {
         for (Team t : ar) {
             System.out.print(t.name + " (" + t.seed + ")" + "\t");
         }
+        System.out.println("\t" + ar.size());
     }
 
     static class Team {
