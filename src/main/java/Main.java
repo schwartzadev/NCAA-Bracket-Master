@@ -137,4 +137,13 @@ public class Main {
         System.out.println(nextRound.size());
         return nextRound;
     }
+
+    class team {
+        public void make(String name, int seed) {
+            this.name = name;
+            this.seed = seed;
+        }
+        String name;
+        int seed;
+    }
 }
