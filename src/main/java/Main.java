@@ -109,14 +109,30 @@ public class Main {
 
 
         printAL(list);
-        list = playRound(list); // returns round of 32
-        list = playRound(list); // returns sweet 16
-        list = playRound(list); // returns 8
-        list = playRound(list); // returns final four
-        list = playRound(list); // returns championship game
-        list = playRound(list); // returns champion
+        list = seededRound(list); // returns round of 32
+        list = seededRound(list); // returns sweet 16
+        list = seededRound(list); // returns 8
+        list = seededRound(list); // returns final four
+        list = seededRound(list); // returns championship game
+        list = seededRound(list); // returns champion
     }
-    public static ArrayList<Team> playRound(ArrayList<Team> ar) {
+
+    public static ArrayList<Team> seededRound(ArrayList<Team> ar) {
+        ArrayList<Team> nextRound = new ArrayList();
+        Random rand = new Random();
+        for (int i = 0; i < ar.size(); i=i+2) {
+            if (list.get(i).seed < list.get(i+1).seed) nextRound.add(list.get(i));
+            else if (list.get(i).seed > list.get(i+1).seed) nextRound.add(list.get(i+1));
+            else if (list.get(i).seed == list.get(i+1).seed) {
+                    int winner = rand.nextInt(2);
+                    nextRound.add(list.get(i + winner));
+            }
+        }
+        printAL(nextRound);
+        return nextRound;
+    }
+
+    public static ArrayList<Team> randomRound(ArrayList<Team> ar) {
         ArrayList<Team> nextRound = new ArrayList();
         Random rand = new Random();
         for (int i = 0; i < ar.size(); i=i+2) {
@@ -126,6 +142,7 @@ public class Main {
         printAL(nextRound);
         return nextRound;
     }
+
     public static void printAL(ArrayList<Team> ar) {
         for (Team t : ar) {
             System.out.print(t.name + " (" + t.seed + ")" + "\t");
