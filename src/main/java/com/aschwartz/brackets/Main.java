@@ -1,3 +1,5 @@
+package com.aschwartz.brackets;
+
 import java.util.ArrayList;
 import java.util.Random;
 
